@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>Gama Academy Projeto CSS</title>
+</head>
+
+<body>
+    <header>
+        
+            <div>
+                <img src="imagens/logoNovo.png" alt="Logo da empresa">
+            </div>
+
+            <ul>
+                <li>
+                    <a href="http://www.linkedin.com/in/henrique-buongermino-638740b9/" target="_blank">Linkedin</a>
+                </li>
+                <li>
+                    <a target="_blank" href="mailto:henriquecontagames@gmail.com">Email</a>
+                </li>
+                <li>
+                    <a href="http://wa.me/17999999999" target="_blank">Whatsapp</a>
+                </li>
+            </ul>
+        
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Henrique Fernando Honorio Buongermino</h1>
+
+                <h5>Fisioterapeura, Protetico, home brew e participante do treinamente Hiring Coders</h5>
+
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="setaAnim" class="fas fa-angle-up"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <div class="caixaTexto">
+                    
+                    <p>                 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dicta rerum amet accusamus
+                        nulla similique odit pariatur inventore! Officia assumenda repellat quis hic distinctio non
+                        error
+                        incidunt velit ratione id.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dicta rerum amet accusamus
+                        nulla similique odit pariatur inventore! Officia assumenda repellat quis hic distinctio non
+                        error
+                        incidunt velit ratione id.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dicta rerum amet accusamus
+                        nulla similique odit pariatur inventore! Officia assumenda repellat quis hic distinctio non
+                        error
+                        incidunt velit ratione id.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dicta rerum amet accusamus
+                        nulla similique odit pariatur inventore! Officia assumenda repellat quis hic distinctio non
+                        error
+                        incidunt velit ratione id.
+                    </p>
+                </div>
+
+                <div class="form">
+                    <p>Deixe seu contato</p>
+                    <input type="text" placeholder="seu email">
+                    <button>enviar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('setaAnim');
+            arrow.classList.toggle('giroSeta');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
