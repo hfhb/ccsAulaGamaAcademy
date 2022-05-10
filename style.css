@@ -13,7 +13,10 @@ ul {
 
 a {
   text-decoration: none;
+  
 }
+
+
 
 body {
   /*
@@ -23,7 +26,7 @@ body {
   background-image: url(imagens/beer-background.jpg);
   background-repeat: repeat-y;
   background-position: center center fixed;
-  background-size: cover;
+  background-size: cover; 
 }
 
 header {
@@ -50,10 +53,23 @@ header ul {
 header ul li {
   padding: 5px;
   border-right: 1px dashed rgb(5, 163, 18);
+  
+}
+
+header #classeLinkedin{
+  cursor: url(imagens/cursor/linkedin.cur),default;
+}
+
+header #classeGithub{
+  cursor: url(imagens/cursor/github.cur),default;
+}
+
+header #classeWhatsapp{
+  cursor: url(imagens/cursor/whatsapp.cur),default;
 }
 
 header ul li a {
-  transition: 300ms;
+  transition: 300ms;  
 }
 
 header ul li a:hover {
@@ -752,7 +768,7 @@ header ul li:first-child {
  */
 
 #arrow i {
-  cursor: pointer;
+  cursor: url(imagens/cursor/cerveja.cur),default;
 }
 
 #setaAnim {
@@ -845,6 +861,7 @@ button {
   padding: 5px 10px;
   background-color: rgb(194, 177, 83);
   color: rgb(19, 238, 37);
+  cursor: url(imagens/cursor/cerveja.cur),default;
   border: none;
   border-radius: 25px 0px 0px 25px;
   margin-top: 20px;
@@ -868,7 +885,7 @@ button {
   color: rgb(5, 163, 18);
   font-weight: 600;
   border: none;
-  cursor: pointer;
+  cursor: url(imagens/cursor/cerveja.cur),default;
   transition: all 300ms ease-out;
   border-radius: 0px 25px 25px 0px;
   margin-left: -7px;
