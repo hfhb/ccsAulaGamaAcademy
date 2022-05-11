@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="pt-br">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <!-- link do fontawesome -->
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <!--link para a origem dos fontes-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
@@ -17,7 +23,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <title>Gama Academy Projeto CSS</title>
+
+
+    <title>Projeto Gama Academy Graduação</title>
 </head>
 
 <body>
@@ -46,13 +54,6 @@
 
     <main>
         <section class="container">
-            <div class="name">
-                <h1>Henrique Fernando Honorio Buongermino</h1>
-
-                <h5>Fisioterapeura, Protetico, home brew e participante do treinamente Hiring Coders</h5>
-
-            </div>
-
             <div onclick="displayAbout()" id="arrow">
                 <i id="setaAnim" class="fas fa-angle-up"></i>
             </div>
@@ -60,15 +61,11 @@
             <div style="display: none;" id="about">
 
                 <ul class="carrocel">
-                    
-                    
-                    
                     <li>
                         <input type="radio" id="carrocel1" name="carrocel" checked>
                         <label for="carrocel1"></label>
-                        <img src="imagens/graduacao.png" alt="silhueta de uma pessoa de toga">
+                        <img src="imagens/home.png" alt="mesa com um computador e uma chícara de café">
                     </li>
-                    
 
                     <li>
                         <input type="radio" id="carrocel2" name="carrocel">
@@ -82,48 +79,9 @@
                         <img src="imagens/cerveja.png" alt="equipamento de fermentação de bebidas fermentadas">
                     </li>
                 </ul>
-
-                <div class="caixaTexto">
-
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dicta rerum amet accusamus
-                        nulla similique odit pariatur inventore! Officia assumenda repellat quis hic distinctio non
-                        error
-                        incidunt velit ratione id.
-                    </p>
-
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dicta rerum amet accusamus
-                        nulla similique odit pariatur inventore! Officia assumenda repellat quis hic distinctio non
-                        error
-                        incidunt velit ratione id.
-                    </p>
-
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dicta rerum amet accusamus
-                        nulla similique odit pariatur inventore! Officia assumenda repellat quis hic distinctio non
-                        error
-                        incidunt velit ratione id.
-                    </p>
-
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dicta rerum amet accusamus
-                        nulla similique odit pariatur inventore! Officia assumenda repellat quis hic distinctio non
-                        error
-                        incidunt velit ratione id.
-                    </p>
-
-
-                </div>
-
-                <div class="form">
-                    <p>Deixe seu contato</p>
-                    <input type="text" placeholder="seu email">
-                    <button>enviar</button>
-                </div>
-            </div>
         </section>
     </main>
+    </div>
 
     <script>
         function displayAbout() {
@@ -133,7 +91,6 @@
             display.classList.toggle('active');
         }
     </script>
-
 </body>
 
 </html>

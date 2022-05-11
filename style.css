@@ -85,6 +85,68 @@ header ul li:first-child {
   padding: 10px;
   text-align: center;
 }
+.container .carrocel{
+  margin: 0;
+  padding: 0;  
+}
+
+.carrocel{
+  display: block;
+  height:600px;
+  width: 300px;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+ 
+}
+
+.carrocel input{
+  display: none;
+  
+}
+
+.carrocel label{
+  background-color: rgba(0, 0, 0, 0);
+  bottom: 10px;
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+  z-index: 10;
+  }
+
+  .carrocel li a img:nth-child(1){
+    left: 10px;
+  }
+
+  .carrocel li:nth-child(2){
+    left: 40px;
+  }
+
+  .carrocel li:nth-child(3){
+    left: 70px;
+  }    
+  
+.carrocel li{
+  list-style: none;
+  position: absolute;
+}
+
+.carrocel li input:checked ~ img {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.carrocel img{
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+   opacity: 1; 
+  visibility: visible; 
+}
 
 /* .container .name h1 {
     padding: 5px;
